@@ -34,6 +34,7 @@ from absl import logging
 from clu import metric_writers
 import jax
 from jax import random
+jax.config.update('jax_array', True)
 from jax.experimental import multihost_utils
 from jax.experimental.global_device_array import GlobalDeviceArray
 import jax.numpy as jnp
